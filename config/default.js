@@ -9,6 +9,9 @@ export default Object.assign(require('../package.json'), {
   port,
   path: {
     assets: __root('assets'),
-    extensions: __root('server/extensions')
+    routes: __root('server/routes'),
+    extensions: __root('server/extensions'),
+    controllers: __root('server/controllers'),
+    layout: __root('server/views/default.html')
   }
 });
