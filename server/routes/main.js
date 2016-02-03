@@ -1,0 +1,2 @@
+// home
+get "/" => "home#index"
