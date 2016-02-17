@@ -1,5 +1,5 @@
 import Meow from 'koa-meow';
 
 export default Meow()
-.load('test')
+.load('init')
 .load('routes');

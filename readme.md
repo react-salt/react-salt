@@ -5,7 +5,7 @@
 ## For Developer
 
 * npm install
-* gulp serve
+* gulp serve || DEBUG=* node app.js
 
 开发项目由git管理，发布项目由npm设置
 
