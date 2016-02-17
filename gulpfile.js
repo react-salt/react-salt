@@ -11,9 +11,8 @@ require('babel-register')({
 });
 require("babel-polyfill");
 
-var app = require('./server/main.js');
-var config = require('config');
+const requireDir = require('require-dir');
 
-app.start(function(err) {
-    console.log('------Server is running on Port: ' + config.port);
-});
+requireDir('./gulp/tasks', {
+  recurse: true
+})
