@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 // CatMeow
-const CM = window.CM;
+//const CM = window.CM;
 
 class Test extends React.Component {
   render() {

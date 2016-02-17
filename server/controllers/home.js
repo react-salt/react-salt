@@ -5,7 +5,7 @@ export default class Home extends Controller {
   *index() {
     this.render({
       page: '/',
-      script: 'home',
+      script: 'bootstrap',
       path: config.path
     });
   }
