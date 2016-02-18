@@ -10,6 +10,7 @@ export default {
     module: {
         loaders: [{
             test: /\.(es6|js|jsx)$/,
+            exclude: /(node_modules(?!\/cat-))/,
             loader: 'babel-loader',
             query: {
                 presets: ['react', 'es2015']

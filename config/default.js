@@ -11,6 +11,12 @@ export default Object.assign(require('../package.json'), {
 
         // client
         assets: __root('assets'),
+        css: {
+            src: {
+                'bootstrap': __root('node_modules/@myfe/myui/dist/bootstrap.css')
+            },
+            dest: __root('assets/style/css')
+        },
         js: {
             entries: {
                 'bootstrap': __root('app/home.js')
