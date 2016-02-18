@@ -6,4 +6,4 @@ class Cat {};
 
 Cat.Grid = Grid;
 
-export default window.Cat = Cat;
+export default window.cat = Cat;
