@@ -19,6 +19,7 @@
 
 * 组件开发基础工具: https://github.com/regether/cat-server
 
-## For Developer
+## For User
 
+* refer to files in the app directory
 
