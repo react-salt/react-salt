@@ -7,4 +7,12 @@ export default class Page extends Cat.PageLayout {
         name: 'Meow',
         navigation: BaseInfo.menuData
     }
+
+    renderMain() {
+        return (
+            <div>
+                <Cat.Tree data={BaseInfo.menuData}/>
+            </div>
+        );
+    }
 }

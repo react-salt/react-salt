@@ -1,8 +1,9 @@
 import React from 'react';
+import PageLayout from '../core/page-layout.js';
 
-export default class PageComponent extends React.Component {
-    render() {
-        let {url} = MYM;
-        return <div>Meow Test: {url}</div>;
+export default class Page extends PageLayout {
+    renderMainExtra() {
+        let { url } = MYM;
+        return <div>{url}</div>;
     }
 }

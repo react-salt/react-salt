@@ -4,7 +4,9 @@ class Cat {};
 
 // Components
 import Grid from 'cat-grid';
+import Tree from 'cat-tree';
 Cat.Grid = Grid;
+Cat.Tree = Tree;
 
 // Layouts
 import { PageBase, PageLayout } from './src/base';

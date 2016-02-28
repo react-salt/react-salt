@@ -23,6 +23,7 @@
   "homepage": "https://github.com/Cat-Meow/cat-meow#readme",
   "dependencies": {
     "cat-grid": "^1.0.1",
+    "cat-tree": "^1.0.0",
     "react": "^0.14.x"
   },
   "files": [
