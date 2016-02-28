@@ -1,7 +1,5 @@
 import React from 'react';
+import PageLayout from '../core/page-layout.js';
 
-export default class PageComponent extends React.Component {
-    render() {
-        return <div>Meow</div>;
-    }
+export default class Page extends PageLayout {
 }
