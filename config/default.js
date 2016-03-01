@@ -27,6 +27,9 @@ export default Object.assign(require('../package.json'), {
 		// doc
 		doc: __root('doc'),
 
+		// npm
+		npm: __root('node_modules'),
+
         // server
         app: __root('server/main.js'),
         routes: __root('server/routes'),

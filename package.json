@@ -6,7 +6,8 @@
   "scripts": {
     "build": "gulp",
 	"clean": "gulp clean",
-    "dev": "node app.js"
+    "dev": "nodemon app.js",
+    "app": "node app.js"
   },
   "repository": {
     "type": "git",

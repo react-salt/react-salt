@@ -27,6 +27,12 @@ const menuData = [{
         name: '快速上手',
         href: '/react/get-started'
     }, {
+		name: 'Grid',
+		href: '/react/components/grid'
+	}, {
+		name: 'Tree',
+		href: '/react/components/tree'
+	}, {
         name: '更新日志',
         href: '/react/logs'
     }]
