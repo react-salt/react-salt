@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "gulp",
+	"clean": "gulp clean",
     "dev": "node app.js"
   },
   "repository": {

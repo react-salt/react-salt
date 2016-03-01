@@ -24,6 +24,9 @@ export default Object.assign(require('../package.json'), {
             dest: __root('assets/scripts')
         },
 
+		// doc
+		doc: __root('doc'),
+
         // server
         app: __root('server/main.js'),
         routes: __root('server/routes'),

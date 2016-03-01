@@ -3,7 +3,12 @@ import PageLayout from '../core/page-layout.js';
 
 export default class Page extends PageLayout {
     renderMainExtra() {
-        let { url } = MYM;
-        return <div>{url}</div>;
+        let { url, readme } = MYM;
+        return (
+			<div>
+				{ url }
+				<div dangerouslySetInnerHTML={{__html: readme}} />
+			</div>
+		)
     }
 }
