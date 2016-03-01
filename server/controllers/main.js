@@ -64,5 +64,24 @@ export default class Home extends Controller {
         });
     }
 
+	/*
+	*	预定义一种组件模块加载的controller
+	* */
+	*component(cp) {
+		console.log('加载组件: ' + cp);
+		let { request } = this.ctx;
+		// 获取当前组件examples文件夹下的文件
+		let files = fs.readdirSync(path.join(config.path.npm, 'cat-' + cp, 'examples'));
+		let jsxReg = new RegExp('.jsx$');
+		let list = files.filter((fileName) => jsxReg.test(fileName));
 
+		this.render({
+			page: '/components',
+			script: 'bootstrap',
+			metadata: JSON.stringify({
+				page: 'common-md',
+				url: request.url
+			})
+		});
+	}
 }
