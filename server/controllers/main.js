@@ -1,6 +1,9 @@
 import Controller from '../controller';
 import config from 'config';
 import serialize from 'serialize-javascript';
+import path from 'path';
+import fs from 'fs';
+import marked from 'marked';
 
 export default class Home extends Controller {
     *index() {
@@ -30,14 +33,18 @@ export default class Home extends Controller {
      * */
     *commonMd() {
         let { request } = this.ctx;
+		let docName = path.join(config.path.doc, request.url.split('/').pop() + '.md');
+		let docFile = fs.existsSync(docName) ? fs.readFileSync(docName, 'utf8') : '';
 
         this.render({
             page: '/test',
             script: 'bootstrap',
             metadata: JSON.stringify({
                 page: 'common-md',
-                url: request.url
-            })
+                url: request.url,
+				readme: marked(docFile)
+            }),
+			readme: marked(docFile)
         });
     }
 
