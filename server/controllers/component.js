@@ -4,6 +4,7 @@ import serialize from 'serialize-javascript';
 import path from 'path';
 import fs from 'fs';
 import marked from 'marked';
+import { Highlight } from 'highlight';
 
 export default class Component extends Controller {
 	/*
@@ -12,11 +13,13 @@ export default class Component extends Controller {
 	*base(cp) {
 		let { request } = this.ctx;
 		// 获取当前组件examples文件夹下的文件
-		let files = fs.readdirSync(path.join(config.path.npm, 'cat-' + cp, 'examples'));
+		let componentPath = path.join(config.path.npm, 'cat-' + cp);
+		let files = fs.readdirSync(path.join(componentPath, 'examples'));
 		let jsxReg = new RegExp('.jsx$');
 		let list = files.filter((fileName) => jsxReg.test(fileName));
-		console.log('加载组件: ' + cp);
-		console.log('组件样例列表:' + list);
+		let scriptFiles = files.map((fileName) => Highlight(fs.readFileSync(path.join(componentPath, 'examples', fileName), 'utf-8')));
+		// readme文件
+		let readme = fs.readFileSync(path.join(componentPath, 'readme.md'), 'utf-8');
 
 		this.renderCp({
 			page: '/components',
@@ -25,7 +28,9 @@ export default class Component extends Controller {
 				page: 'component',
 				url: request.url,
 				cp: cp,
-				list: list
+				list: list,
+				readme: marked(readme),
+				code: scriptFiles
 			})
 		});
 	}

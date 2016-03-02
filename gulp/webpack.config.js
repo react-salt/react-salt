@@ -11,13 +11,16 @@ export default {
     watch: true,
     module: {
         loaders: [{
-            test: /\.(es6|js|jsx)$/,
-            exclude: /(node_modules(?!\/cat-))/,
-            loader: 'babel-loader',
-            query: {
-                presets: ['react', 'es2015', 'stage-0']
-            }
-        }] 
+			test: /\.(es6|js|jsx)$/,
+			exclude: /(node_modules(?!\/cat-))/,
+			loader: 'babel-loader',
+			query: {
+				presets: ['react', 'es2015', 'stage-0']
+			}
+		}, {
+			test: /\.less$/,
+			loader: 'style!css!less'
+		}]
     },
     devtool: 'source-map',
     plugins: [new LiveReloadPlugin()]
