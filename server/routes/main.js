@@ -12,6 +12,6 @@ get "/react" => "redirect#common"
 get "/react/cat-meow" => "main#commonMd"
 get "/react/get-started" => "main#commonMd"
 get "/react/logs" => "main#commonMd"
-get "/react/components/:cp(\w+)" => "main#component"
+get "/react/components/:cp(\w+)" => "component#base"
 
 get "/resource" => "main#base"
