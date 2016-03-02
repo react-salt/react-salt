@@ -2,20 +2,29 @@ import React from 'react';
 import PageLayout from '../core/page-layout.js';
 import Ex from '../components/example.js';
 
+let Examples = [];
+
 MYM.list.map((item) => {
-	console.log(item);
+	let name = item.substring(0, item.length - 4);
+	let Ex = name[0].toUpperCase() + name.slice(1);
+	let Example= require('../../node_modules/cat-' + MYM.cp + '/examples/' + name + '.jsx');
+	Examples.push(Example.default);
 });
 
 export default class Page extends PageLayout {
     renderMainExtra() {
-        let { url, readme, list, cp } = MYM;
+        let { readme, code } = MYM;
         return (
 			<div>
-				{ url }
 				<div dangerouslySetInnerHTML={{__html: readme}} />
 				{
-					list.map((item, index) => {
-						return <Ex cp={cp} name={item} key={index}/>;
+					Examples.map((Example, index) => {
+						return (
+							<div>
+								<Example key={index} />
+								<pre dangerouslySetInnerHTML={{__html: code[index]}}/>
+							</div>
+						);
 					})
 				}
 			</div>
