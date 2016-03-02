@@ -20,8 +20,8 @@ export default class Page extends PageLayout {
 				{
 					Examples.map((Example, index) => {
 						return (
-							<div>
-								<Example key={index} />
+							<div key={index}>
+								<Example />
 								<pre dangerouslySetInnerHTML={{__html: code[index]}}/>
 							</div>
 						);

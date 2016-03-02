@@ -4,3 +4,4 @@ export default Meow()
 .load('init')
 .load('static')
 .load('routes');
+//.load('gzip');
