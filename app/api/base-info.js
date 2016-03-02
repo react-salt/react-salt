@@ -38,7 +38,11 @@ const menuData = [{
     }]
 },{
     name: '资源',
-    href: '/resource'
+    href: '/resource',
+	children: [{
+		name: '聊天室',
+		href: 'https://gitter.im/Sobranier/Cat-Meow?utm_source=share-link&utm_medium=link&utm_campaign=share-link'
+	}]
 }];
 
 export default {

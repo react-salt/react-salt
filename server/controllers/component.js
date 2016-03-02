@@ -21,7 +21,7 @@ export default class Component extends Controller {
 		// readme文件
 		let readme = fs.readFileSync(path.join(componentPath, 'readme.md'), 'utf-8');
 
-		this.renderCp({
+		this.render({
 			page: '/components',
 			script: 'bootstrap',
 			metadata: JSON.stringify({

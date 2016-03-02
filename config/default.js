@@ -13,7 +13,8 @@ export default Object.assign(require('../package.json'), {
         assets: __root('assets'),
         css: {
             src: {
-                'bootstrap': __root('node_modules/bootstrap/dist/css/bootstrap.css')
+                'bootstrap': __root('node_modules/bootstrap/dist/css/bootstrap.css'),
+				'common': __root('app/styles/css/index.less')
             },
             dest: __root('assets/style/css')
         },
