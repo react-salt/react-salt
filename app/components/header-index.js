@@ -1,9 +1,9 @@
 import React from 'react';
 
-let Header = (props) => {
+function Header(props) {
 	return (
-		<header>
-			<ul>
+		<header className="header-nav">
+			<ul className="clearfix">
 				{
 					props.data.map((item, index) => {
 						return (
