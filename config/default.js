@@ -14,7 +14,8 @@ export default Object.assign(require('../package.json'), {
         css: {
             src: {
                 'bootstrap': __root('node_modules/bootstrap/dist/css/bootstrap.css'),
-				'common': __root('app/styles/css/index.less')
+				'common': __root('app/styles/css/index.less'),
+				'path': __root('app/styles/css')
             },
             dest: __root('assets/style/css')
         },
