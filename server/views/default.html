@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Cat-Meow</title>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="/style/css/bootstrap.css">
-  <link rel="stylesheet" href="/style/css/index.css">
+	<title>Cat-Meow</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="/style/css/bootstrap.css">
+	<link rel="stylesheet" href="/style/css/index.css">
 </head>
 <body>
-  <div id="app"/></div>
-  <script>
-    window.MYM = <%= metadata %>;
-  </script>
-  <script src="/scripts/<%= script %>.js"></script>
-  <script src="http://localhost:35729/livereload.js"></script>
+	<div id="app" class="page-<%= page %>"/></div>
+	<script>
+		window.MYM = <%= metadata %>;
+	</script>
+	<script src="/scripts/<%= script %>.js"></script>
+	<script src="http://localhost:35729/livereload.js"></script>
 </body>
 </html>

@@ -8,7 +8,7 @@ import marked from 'marked';
 export default class Main extends Controller {
     *index() {
         this.render({
-            page: '/',
+            page: 'index',
             script: 'bootstrap',
             path: config.path,
             metadata: JSON.stringify({
@@ -19,7 +19,7 @@ export default class Main extends Controller {
 
     *test() {
         this.render({
-            page: '/test',
+            page: 'test',
             script: 'bootstrap',
             metadata: JSON.stringify({
                 page: 'test'
@@ -37,7 +37,7 @@ export default class Main extends Controller {
 		let docFile = fs.existsSync(docName) ? fs.readFileSync(docName, 'utf8') : '';
 
         this.render({
-            page: '/test',
+            page: 'common-md',
             script: 'bootstrap',
             metadata: JSON.stringify({
                 page: 'common-md',
@@ -55,10 +55,10 @@ export default class Main extends Controller {
         let { request } = this.ctx;
 
         this.render({
-            page: '/test',
+            page: 'base',
             script: 'bootstrap',
             metadata: JSON.stringify({
-                page: 'common-md',
+                page: 'base',
                 url: request.url
             })
         });

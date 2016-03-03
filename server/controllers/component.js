@@ -22,7 +22,7 @@ export default class Component extends Controller {
 		let readme = fs.readFileSync(path.join(componentPath, 'readme.md'), 'utf-8');
 
 		this.render({
-			page: '/components',
+			page: 'component',
 			script: 'bootstrap',
 			metadata: JSON.stringify({
 				page: 'component',
