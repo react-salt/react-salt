@@ -7,7 +7,7 @@ let Examples = [];
 MYM.list.map((item) => {
 	let name = item.substring(0, item.length - 4);
 	let Ex = name[0].toUpperCase() + name.slice(1);
-	let Example= require('../../node_modules/cat-' + MYM.cp + '/examples/' + name + '.jsx');
+	let Example= require('../../node_modules/rs-' + MYM.cp + '/examples/' + name + '.jsx');
 	Examples.push(Example.default);
 });
 

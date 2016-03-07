@@ -4,7 +4,7 @@ import BaseInfo from '../api/base-info.js';
 
 export default class Page extends Cat.PageLayout {
     system = {
-        name: 'Meow',
+        name: 'Salt',
         navigation: BaseInfo.menuData
     }
 

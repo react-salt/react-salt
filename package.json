@@ -1,5 +1,5 @@
 {
-  "name": "cat-meow",
+  "name": "react-salt",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Cat-Meow/cat-meow.git"
+    "url": "git@github.com:react-salt/react-salt.git"
   },
   "keywords": [
     "react",
@@ -20,16 +20,18 @@
   "author": "yanweiqing",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Cat-Meow/cat-meow/issues"
+    "url": "https://github.com/react-salt/react-salt/issues"
   },
-  "homepage": "https://github.com/Cat-Meow/cat-meow#readme",
+  "homepage": "https://github.com/react-salt/react-salt#readme",
   "dependencies": {
-    "cat-grid": "^1.0.1",
-    "cat-tree": "^1.0.0",
+    "rs-panel": "^0.1.x",
+    "rs-tree": "^0.1.x",
     "react": "^0.14.x"
   },
   "files": [
-    "index.js"
+    "index.js",
+    "assets/",
+    "src/"
   ],
   "devDependencies": {
     "babel": "^6.3.26",

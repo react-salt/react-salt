@@ -9,7 +9,7 @@ export default class Page extends PageLayout {
             <div>
 				<Header data={this.system.navigation} />
 				<section className="logo-wrap">
-					<h1>Cat Meow</h1>
+					<h1>React Salt</h1>
 				</section>
 				<Footer system={this.system} />
             </div>

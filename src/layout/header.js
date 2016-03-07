@@ -21,7 +21,7 @@ let Header = (props) => {
                 <div className="navbar-header">
                     <a href="/" className="navbar-brand">
                         <span className="logo-img"></span>
-                        {props.system && props.system.name ? props.system.name : 'Cat Meow'}
+                        {props.system && props.system.name ? props.system.name : 'React Salt'}
                     </a>
                 </div>
                 <div className="collapse navbar-collapse">
@@ -30,7 +30,7 @@ let Header = (props) => {
                         {
                             renderHeaderNavigation(props.system && props.system.navigation ?
                                 props.system.navigation :
-                                [{name: "GitHub", href: "https://github.com/Cat-Meow/cat-meow", target: "_blank"}]
+                                [{name: "GitHub", href: "https://github.com/react-salt/react-salt", target: "_blank"}]
                             )
                         }
                     </ul>
