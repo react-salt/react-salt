@@ -21,14 +21,14 @@ const menuData = [{
     name: '组件',
     href: '/react',
     children: [{
-        name: 'Cat Meow',
-        href: '/react/cat-meow'
+        name: 'React Salt',
+        href: '/react/salt'
     }, {
         name: '快速上手',
         href: '/react/get-started'
     }, {
-		name: 'Grid',
-		href: '/react/components/grid'
+		name: 'Panel',
+		href: '/react/components/panel'
 	}, {
 		name: 'Tree',
 		href: '/react/components/tree'
@@ -41,7 +41,7 @@ const menuData = [{
     href: '/resource',
 	children: [{
 		name: '聊天室',
-		href: 'https://gitter.im/Sobranier/Cat-Meow?utm_source=share-link&utm_medium=link&utm_campaign=share-link'
+		href: 'https://gitter.im/Sobranier/react-salt?utm_source=share-link&utm_medium=link&utm_campaign=share-link'
 	}]
 }];
 

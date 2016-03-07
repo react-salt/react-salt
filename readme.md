@@ -1,4 +1,4 @@
-# Cat-Meow React组件解决方案
+# React Salt组件解决方案
 
 一套前端设计语言和基于React的实现
 

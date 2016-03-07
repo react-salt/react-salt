@@ -13,7 +13,7 @@ export default class Component extends Controller {
 	*base(cp) {
 		let { request } = this.ctx;
 		// 获取当前组件examples文件夹下的文件
-		let componentPath = path.join(config.path.npm, 'cat-' + cp);
+		let componentPath = path.join(config.path.npm, 'rs-' + cp);
 		let files = fs.readdirSync(path.join(componentPath, 'examples'));
 		let jsxReg = new RegExp('.jsx$');
 		let list = files.filter((fileName) => jsxReg.test(fileName));

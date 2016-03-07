@@ -12,7 +12,7 @@ export default {
     module: {
         loaders: [{
 			test: /\.(es6|js|jsx)$/,
-			exclude: /(node_modules(?!\/cat-))/,
+			exclude: /(node_modules(?!\/rs-))/,
 			loader: 'babel-loader',
 			query: {
 				presets: ['react', 'es2015', 'stage-0']
