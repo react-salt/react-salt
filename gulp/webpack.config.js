@@ -18,7 +18,7 @@ export default {
 				presets: ['react', 'es2015', 'stage-0']
 			}
 		}, {
-			test: /\.less$/,
+			test: /\.(css|less)$/,
 			loader: 'style!css!less'
 		}]
     },

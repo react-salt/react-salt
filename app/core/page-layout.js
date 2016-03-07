@@ -1,8 +1,8 @@
 import React from 'react';
-import Cat from '../../index.js';
+import Salt from '../../index.js';
 import BaseInfo from '../api/base-info.js';
 
-export default class Page extends Cat.PageLayout {
+export default class Page extends Salt.PageLayout {
     system = {
         name: 'Salt',
         navigation: BaseInfo.menuData
@@ -26,12 +26,17 @@ export default class Page extends Cat.PageLayout {
 		return list;
 	}
 
+    renderMainContent() {}
+
     renderMain() {
 		let menuData = this.filterData(BaseInfo.menuData, MYM.url);
 
         return (
-            <div>
-                <Cat.Tree data={menuData}/>
+            <div className="container">
+                <div className="col-md-3">
+                    <Salt.Tree data={menuData} />
+                </div>
+                {this.renderMainContent()}
             </div>
         );
     }

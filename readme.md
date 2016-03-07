@@ -17,7 +17,7 @@
 
 ## 开发文档
 
-* 组件开发基础工具: https://github.com/regether/cat-server
+* 组件开发基础工具: https://github.com/regether/rs-server
 
 ## For User
 

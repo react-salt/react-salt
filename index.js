@@ -1,16 +1,16 @@
 'use strict';
 
-class Cat {};
+class Salt {};
 
 // Components
-import Grid from 'cat-grid';
-import Tree from 'cat-tree';
-Cat.Grid = Grid;
-Cat.Tree = Tree;
+import Panel from 'rs-panel';
+import Tree from 'rs-tree';
+Salt.Panel = Panel;
+Salt.Tree = Tree;
 
 // Layouts
 import { PageBase, PageLayout } from './src/base';
-Cat.PageBase = PageBase;
-Cat.PageLayout = PageLayout;
+Salt.PageBase = PageBase;
+Salt.PageLayout = PageLayout;
 
-export default window.cat = Cat;
+export default window.salt = Salt;
