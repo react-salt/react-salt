@@ -9,7 +9,7 @@ export default class Component extends Controller {
 		let { request } = this.ctx;
 
 		this.render({
-			page: 'component',
+			page: 'error',
 			script: 'bootstrap',
 			metadata: JSON.stringify({
 				page: 'error',

@@ -1,5 +1,4 @@
 .header-nav {
-	margin-top: 25%;
 	ul {
 		list-style: none;
 		padding: 0;
@@ -23,6 +22,12 @@
 	}
 }
 
+.page-index {
+    .header-nav {
+        margin-top: 25%;
+    }
+}
+
 .logo-wrap {
 	margin: 0 auto 100px;
 	h1 {
@@ -38,8 +43,18 @@
 	text-align: center;
 }
 
-@media (min-width: 1280px) {
-	.header-nav {
-		margin-top: 20%;
-	}
+@media (min-width: 1280px) and (max-width: 1675px) {
+    .page-index {
+        .header-nav {
+            margin-top: 20%;
+        }
+    }
+}
+
+@media (min-width: 1676px) {
+    .page-index {
+        .header-nav {
+            margin-top: 15%;
+        }
+    }
 }

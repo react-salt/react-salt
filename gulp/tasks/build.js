@@ -1,5 +1,5 @@
 import gulp from 'gulp';
 
-gulp.task('build', ['less', 'watch'], (callback) => {
+gulp.task('build', ['less', 'image', 'fonts', 'watch'], (callback) => {
     gulp.start('jsx');
 })

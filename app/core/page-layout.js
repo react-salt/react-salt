@@ -32,9 +32,9 @@ export default class Page extends Salt.PageLayout {
 		let menuData = this.filterData(BaseInfo.menuData, MYM.url);
 
         return (
-            <div className="container">
-                <div className="col-md-3 wrapper-left">
-                    <Salt.Tree data={menuData} />
+            <div className="container-fluid">
+                <div className="col-sm-3 wrapper-left">
+                    <Salt.Tree data={menuData} selected={MYM.url}/>
                 </div>
                 {this.renderMainContent()}
             </div>
