@@ -14,7 +14,7 @@ get "/react/get-started" => "main#commonMd"
 get "/react/logs" => "main#commonMd"
 get "/react/components/:cp(\w+)" => "component#base"
 
-get "/resource" => "main#base"
+get "/resource" => "main#commonMd"
 
 // 404
 get "/error" => "error#base"

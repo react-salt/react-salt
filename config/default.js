@@ -19,6 +19,14 @@ export default Object.assign(require('../package.json'), {
             },
             dest: __root('assets/style/css')
         },
+        image: {
+            src: __root('app/styles/images/**'),
+            dest: __root('assets/style/images')
+        },
+        fonts: {
+            src: __root('node_modules/bootstrap/fonts/**'),
+            dest: __root('assets/style/fonts')
+        },
         js: {
             entries: {
                 'bootstrap': __root('app/home.js')
