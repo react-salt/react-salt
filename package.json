@@ -30,7 +30,6 @@
   },
   "files": [
     "index.js",
-    "assets/",
     "src/"
   ],
   "devDependencies": {

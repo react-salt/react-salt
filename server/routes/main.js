@@ -5,7 +5,7 @@ get "/test" => "main#test"
 get "/practice" => "redirect#common"
 get "/practice/cases" => "main#commonMd"
 get "/practice/overall" => "main#commonMd"
-get "/practice/members" => "main#commonMd"
+get "/practice/members" => "main#member"
 get "/practice/list" => "main#commonMd"
 
 get "/react" => "redirect#common"

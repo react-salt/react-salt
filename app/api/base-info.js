@@ -42,9 +42,26 @@ const menuData = [{
 	children: [{
 		name: '聊天室',
 		href: 'https://gitter.im/Sobranier/react-salt?utm_source=share-link&utm_medium=link&utm_campaign=share-link'
-	}]
+	}, {
+        name: 'GitHub',
+        href: 'https://github.com/react-salt'
+    }]
+}];
+
+const member = [{
+    link: 'https://github.com/Sobranier',
+    img: 'https://avatars3.githubusercontent.com/u/7440073?v=3&s=230'
+}, {
+    img: 'https://avatars3.githubusercontent.com/u/1124573?v=3&s=230'
+}, {
+    img: 'https://avatars1.githubusercontent.com/u/3753637?v=3&s=230'
+}, {
+    img: 'https://avatars3.githubusercontent.com/u/7994652?v=3&s=230'
+}, {
+    img: 'https://avatars3.githubusercontent.com/u/8955196?v=3&s=230'
 }];
 
 export default {
-    menuData: menuData
+    menuData: menuData,
+    member: member
 }
