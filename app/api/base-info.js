@@ -27,6 +27,9 @@ const menuData = [{
         name: '快速上手',
         href: '/react/get-started'
     }, {
+        name: 'Pagination',
+        href: '/react/components/pagination'
+    }, {
 		name: 'Panel',
 		href: '/react/components/panel'
 	}, {

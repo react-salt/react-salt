@@ -3,8 +3,10 @@
 class Salt {};
 
 // Components
+import Pagination from 'rs-pagination';
 import Panel from 'rs-panel';
 import Tree from 'rs-tree';
+Salt.Pagination = Pagination;
 Salt.Panel = Panel;
 Salt.Tree = Tree;
 

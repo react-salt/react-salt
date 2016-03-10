@@ -15,6 +15,7 @@ export default Object.assign(require('../package.json'), {
             src: {
                 'bootstrap': __root('node_modules/bootstrap/dist/css/bootstrap.css'),
 				'common': __root('app/styles/css/index.less'),
+                'salt': __root('node_modules/rs-ui/dist/react-salt-ui.css'),
 				'path': __root('app/styles/css')
             },
             dest: __root('assets/style/css')

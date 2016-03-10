@@ -24,9 +24,10 @@
   },
   "homepage": "https://github.com/react-salt/react-salt#readme",
   "dependencies": {
+    "react": "^0.14.x",
+    "rs-pagination": "^0.1.0",
     "rs-panel": "^0.1.x",
-    "rs-tree": "^0.1.x",
-    "react": "^0.14.x"
+    "rs-tree": "^0.1.x"
   },
   "files": [
     "index.js",
@@ -62,6 +63,7 @@
     "meow-routeify": "0.0.1",
     "react-dom": "^0.14.7",
     "require-dir": "^0.3.0",
+    "rs-ui": "0.0.1",
     "serialize-javascript": "^1.1.2",
     "style-loader": "^0.13.0",
     "webpack": "^1.12.13",

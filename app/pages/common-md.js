@@ -6,7 +6,7 @@ export default class Page extends PageLayout {
         let { readme } = MYM;
 
         return (
-			<div className="col-sm-9">
+			<div className="col-sm-18">
 				<div dangerouslySetInnerHTML={{__html: readme}} />
 			</div>
 		)

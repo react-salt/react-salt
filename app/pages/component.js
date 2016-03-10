@@ -16,7 +16,7 @@ export default class Page extends PageLayout {
         let { readme, code } = MYM;
 
         return (
-			<div className="col-sm-9">
+			<div className="col-sm-18">
 				<div dangerouslySetInnerHTML={{__html: readme}} className="wrapper-marked" />
                 <h2>代码DEMO<i className="glyphicon glyphicon-leaf" /></h2>
 				{
