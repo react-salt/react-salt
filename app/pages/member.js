@@ -6,7 +6,7 @@ import BaseInfo from '../api/base-info.js';
 export default class Page extends PageLayout {
     renderMainContent() {
         return (
-			<div className="col-sm-9">
+			<div className="col-sm-18">
                 <ul className="wrapper-member-list clearfix">
                     {
                         BaseInfo.member.map((item, index) => {
