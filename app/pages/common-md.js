@@ -7,7 +7,7 @@ export default class Page extends PageLayout {
 
         return (
 			<div className="col-sm-18">
-				<div dangerouslySetInnerHTML={{__html: readme}} />
+				<div dangerouslySetInnerHTML={{__html: readme}} className="wrapper-marked"/>
 			</div>
 		)
     }

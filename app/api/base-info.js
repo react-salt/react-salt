@@ -27,14 +27,44 @@ const menuData = [{
         name: '快速上手',
         href: '/react/get-started'
     }, {
+        name: 'Button',
+        href: '/react/components/button'
+    }, {
+        name: 'Grid',
+        href: '/react/components/grid'
+    }, {
         name: 'Pagination',
         href: '/react/components/pagination'
     }, {
-		name: 'Panel',
-		href: '/react/components/panel'
-	}, {
+        name: 'BreadCrumb',
+        href: '/react/components/breadcrumb'
+    }, {
 		name: 'Tree',
 		href: '/react/components/tree'
+    }, {
+        name: 'Tab',
+        href: '/react/components/tab'
+    }, {
+		name: 'Panel',
+		href: '/react/components/panel'
+    }, {
+        name: 'DropDown',
+        href: '/react/components/dropdown'
+    }, {
+        name: 'Pop',
+        href: '/react/components/pop'
+    }, {
+        name: 'Collapse',
+        href: '/react/components/collapse'
+    }, {
+        name: 'Dialog',
+        href: '/react/components/dialog'
+    }, {
+        name: 'SweetAlert',
+        href: '/react/components/sweetalert'
+    }, {
+        name: 'DatePicker',
+        href: '/react/components/datepicker'
 	}, {
         name: '更新日志',
         href: '/react/logs'
