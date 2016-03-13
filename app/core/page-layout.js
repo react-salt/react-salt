@@ -34,7 +34,7 @@ export default class Page extends Salt.PageLayout {
         return (
             <div className="container-fluid">
                 <div className="col-sm-6 wrapper-left">
-                    <Salt.Tree data={menuData} selected={MYM.url}/>
+                    <Salt.Tree data={menuData} selected={MYM.url} opened/>
                 </div>
                 {this.renderMainContent()}
             </div>

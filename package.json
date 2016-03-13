@@ -25,8 +25,18 @@
   "homepage": "https://github.com/react-salt/react-salt#readme",
   "dependencies": {
     "react": "^0.14.x",
+    "rs-breadcrumb": "^0.1.0",
+    "rs-button": "^0.1.0",
+    "rs-collapse": "^0.1.0",
+    "rs-datepicker": "^0.1.0",
+    "rs-dialog": "^0.1.0",
+    "rs-dropdown": "^0.1.0",
+    "rs-grid": "^0.1.1",
     "rs-pagination": "^0.1.0",
-    "rs-panel": "^0.1.x",
+    "rs-panel": "^0.1.2",
+    "rs-pop": "^0.1.0",
+    "rs-sweetalert": "^0.1.0",
+    "rs-tab": "^0.1.0",
     "rs-tree": "^0.1.x"
   },
   "files": [
@@ -63,7 +73,7 @@
     "meow-routeify": "0.0.1",
     "react-dom": "^0.14.7",
     "require-dir": "^0.3.0",
-    "rs-ui": "0.0.1",
+    "rs-ui": "0.0.4",
     "serialize-javascript": "^1.1.2",
     "style-loader": "^0.13.0",
     "webpack": "^1.12.13",
