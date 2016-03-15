@@ -1,8 +1,8 @@
-import Meow from 'koa-meow';
+import Salt from 'koa-salt';
 
 import render from './middlewares/render';
 
-export default class Controller extends Meow.Controller {
+export default class Controller extends Salt.Controller {
   render(dir) {
     render.apply(this.ctx, arguments);
   }

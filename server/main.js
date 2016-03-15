@@ -1,6 +1,6 @@
-import Meow from 'koa-meow';
+import Salt from 'koa-salt';
 
-export default Meow()
+export default Salt()
 .load('init')
 .load('static')
 .load('routes')
