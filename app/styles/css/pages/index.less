@@ -1,0 +1,60 @@
+.header-nav {
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 40px auto;
+		width: 240px;
+		li {
+			float: left;
+			width: 60px;
+			text-align: center;
+		}
+		a {
+			color: #494b4d;
+			font-weight: bold;
+			text-transform: uppercase;
+			text-decoration: none;
+			font-size: 16px;
+			&:hover {
+				color: #32a1cf;
+			}
+		}
+	}
+}
+
+.page-index {
+    .header-nav {
+        margin-top: 25%;
+    }
+}
+
+.logo-wrap {
+	margin: 0 auto 100px;
+	h1 {
+		font-family: 'Shadows Into Light', cursive;
+		text-align: center;
+		font-size: 64px;
+		line-height: 200px;
+	}
+}
+
+.common-wrapper {
+	height: 40%;
+	text-align: center;
+}
+
+@media (min-width: 1280px) and (max-width: 1675px) {
+    .page-index {
+        .header-nav {
+            margin-top: 20%;
+        }
+    }
+}
+
+@media (min-width: 1676px) {
+    .page-index {
+        .header-nav {
+            margin-top: 15%;
+        }
+    }
+}
