@@ -28,69 +28,96 @@ const menuData = [{
         href: '/react/get-started'
     }, {
         name: '基础',
+        className: 'side-subtitle'
     }, {
         name: 'Button',
-        href: '/react/components/button'
+        href: '/react/components/button',
+        className: 'side-subchildren'
     }, {
-        name: '表单'
+        name: 'Layout',
+        href: '/react/components/csslayout',
+        className: 'side-subchildren'
+    }, {
+        name: '表单',
+        className: 'side-subtitle'
     }, {
         name: 'Form',
-        href: '/react/components/form'
+        href: '/react/components/form',
+        className: 'side-subchildren'
     }, {
         name: 'DatePicker',
-        href: '/react/components/datepicker'
+        href: '/react/components/datepicker',
+        className: 'side-subchildren'
     }, {
         name: 'Input',
-        href: '/react/components/input'
+        href: '/react/components/input',
+        className: 'side-subchildren'
     }, {
         name: 'Select',
-        href: '/react/components/select'
+        href: '/react/components/select',
+        className: 'side-subchildren'
     }, {
-        name: '展示'
+        name: '展示',
+        className: 'side-subtitle'
     }, {
         name: 'Grid',
-        href: '/react/components/grid'
+        href: '/react/components/grid',
+        className: 'side-subchildren'
     }, {
 		name: 'Panel',
-		href: '/react/components/panel'
+		href: '/react/components/panel',
+        className: 'side-subchildren'
     }, {
         name: 'DropDown',
-        href: '/react/components/dropdown'
+        href: '/react/components/dropdown',
+        className: 'side-subchildren'
     }, {
         name: 'Pop',
-        href: '/react/components/pop'
+        href: '/react/components/pop',
+        className: 'side-subchildren'
     }, {
         name: 'Collapse',
-        href: '/react/components/collapse'
+        href: '/react/components/collapse',
+        className: 'side-subchildren'
     }, {
         name: 'Alert',
-        href: '/react/components/alert'
+        href: '/react/components/alert',
+        className: 'side-subchildren'
     }, {
         name: 'Dialog',
-        href: '/react/components/dialog'
+        href: '/react/components/dialog',
+        className: 'side-subchildren'
     }, {
         name: 'SweetAlert',
-        href: '/react/components/sweetalert'
+        href: '/react/components/sweetalert',
+        className: 'side-subchildren'
     }, {
         name: 'Timeline',
-        href: '/react/components/timeline'
+        href: '/react/components/timeline',
+        className: 'side-subchildren'
     }, {
         name: 'Loading',
-        href: '/react/components/loading'
+        href: '/react/components/loading',
+        className: 'side-subchildren'
     }, {
-        name: '导航'
+        name: '导航',
+        className: 'side-subtitle'
     }, {
         name: 'BreadCrumb',
-        href: '/react/components/breadcrumb'
+        href: '/react/components/breadcrumb',
+        className: 'side-subchildren'
     }, {
         name: 'Pagination',
-        href: '/react/components/pagination'
+        href: '/react/components/pagination',
+        className: 'side-subchildren'
     }, {
 		name: 'Tree',
-		href: '/react/components/tree'
+		href: '/react/components/tree',
+        className: 'side-subchildren'
     }, {
         name: 'Tab',
-        href: '/react/components/tab'
+        href: '/react/components/tab',
+        className: 'side-subchildren'
 	}, {
         name: '更新日志',
         href: '/react/logs'
