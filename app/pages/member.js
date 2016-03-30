@@ -6,7 +6,6 @@ import BaseInfo from '../api/base-info.js';
 export default class Page extends PageLayout {
     renderMainContent() {
         let dataList = BaseInfo[MYM.type];
-        console.log(BaseInfo);
         return (
 			<div className="col-sm-18">
                 <ul className="wrapper-member-list clearfix">
