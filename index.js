@@ -30,6 +30,8 @@ import Tab from 'rs-tab';
 Salt.Tab = Tab;
 import Tree from 'rs-tree';
 Salt.Tree = Tree;
+import Notify from 'rs-notify';
+Salt.Notify = Notify;
 
 import Form, { FormControl, Tips } from 'rs-form';
 Salt.Form = Form;

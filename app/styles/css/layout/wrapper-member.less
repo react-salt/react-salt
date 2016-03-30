@@ -1,7 +1,27 @@
 .wrapper-member-list {
     list-style: none;
+    padding-left: 0;
     li {
-        float: left;
-        width: 50%;
+        width: 100%;
+        .salt-panel {
+            height: 82px;
+        }
+        p {
+            line-height: 5.5em;
+            color: #999;
+        }
+        &:hover {
+            .salt-panel {
+                background-color: #eee;
+            }
+        }
+        img {
+            width: 80px;height: 80px;
+            padding: 10px;
+        }
+        h2 {
+            margin-left: 10px;
+            margin-right: 20px;
+        }
     }
 }

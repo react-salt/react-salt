@@ -51,7 +51,7 @@ export default class Main extends Controller {
     /*
      *  预定义一种用户自定义内容的controller
      * */
-    *member() {
+    *member(type) {
         let { request } = this.ctx;
 
         this.render({
@@ -59,7 +59,8 @@ export default class Main extends Controller {
             script: 'bootstrap',
             metadata: JSON.stringify({
                 page: 'member',
-                url: request.url
+                url: request.url,
+                type: type
             })
         });
     }
