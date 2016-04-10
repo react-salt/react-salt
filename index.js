@@ -1,55 +1,34 @@
-'use strict';
+const Page = require('./dist/base');
+const Pop = require('rs-pop');
+const Form = require('rs-form');
+const Text = require('rs-input');
 
-class Salt {};
+const Salt = {
+    BreadCrumb: require('rs-breadcrumb'),
+    Button: require('rs-button'),
+    Collapse: require('rs-collapse'),
+    DatePicker: require('rs-datepicker'),
+    Dialog: require('rs-dialog'),
+    DropDown: require('rs-dropdown'),
+    Grid: require('rs-grid'),
+    Pagination: require('rs-pagination'),
+    Panel: require('rs-panel'),
+    Sweet: require('rs-sweetalert'),
+    Tab: require('rs-tab'),
+    Tree: require('rs-tree'),
+    Notify: require('rs-notify'),
+    Select: require('rs-select'),
+    Pop: Pop,
+    PopConfirm: Pop.PopConfirm,
+    Form: Form,
+    FormControl: Form.FormControl,
+    Tips: Form.Tips,
+    Text: Text,
+    Textarea: Text.Texyarea,
+    Radio: Text.Radio,
+    Checkbox: Text.Checkbox,
+    PageBase: Page.PageBase,
+    PageLayout: Page.PageLayout
+};
 
-// Components
-import BreadCrumb from 'rs-breadcrumb';
-Salt.BreadCrumb = 'BreadCrumb';
-import Button from 'rs-button';
-Salt.Button = Button;
-import Collapse from 'rs-collapse';
-Salt.Collapse = Collapse;
-import DatePicker from 'rs-datepicker';
-Salt.DatePicker = DatePicker;
-import Dialog from 'rs-dialog';
-Salt.Dialog = Dialog;
-import DropDown from 'rs-dropdown';
-Salt.DropDown = DropDown;
-import Grid from 'rs-grid';
-Salt.Grid = Grid;
-import Pagination from 'rs-pagination';
-Salt.Pagination = Pagination;
-import Panel from 'rs-panel';
-Salt.Panel = Panel;
-import Pop, { PopConfirm } from 'rs-pop';
-Salt.Pop = Pop;
-Salt.PopConfirm = PopConfirm;
-import SweetAlert from 'rs-sweetalert';
-Salt.SweetAlert = SweetAlert;
-import Tab from 'rs-tab';
-Salt.Tab = Tab;
-import Tree from 'rs-tree';
-Salt.Tree = Tree;
-import Notify from 'rs-notify';
-Salt.Notify = Notify;
-
-import Form, { FormControl, Tips } from 'rs-form';
-Salt.Form = Form;
-Salt.FormControl = FormControl;
-Salt.Tips = Tips;
-
-import Text, { Textarea, Radio, Checkbox } from 'rs-input';
-Salt.Text = Text;
-Salt.Textarea = Textarea;
-Salt.Radio = Radio;
-Salt.Checkbox = Checkbox;
-
-import Select from 'rs-select';
-Salt.Select = Select;
-
-// Layouts
-import { PageBase, PageLayout } from './src/base';
-Salt.PageBase = PageBase;
-Salt.PageLayout = PageLayout;
-
-export default window.salt = Salt;
+module.exports = Salt;

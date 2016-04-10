@@ -1,6 +1,6 @@
 {
   "name": "react-salt",
-  "version": "0.0.4",
+  "version": "0.0.8",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -30,7 +30,7 @@
     "rs-button": "^0.1.4",
     "rs-collapse": "^0.1.3",
     "rs-datepicker": "^0.1.2",
-    "rs-dialog": "^0.1.1",
+    "rs-dialog": "^0.1.2",
     "rs-dropdown": "^0.1.1",
     "rs-form": "0.0.9",
     "rs-grid": "^0.1.2",
@@ -41,7 +41,7 @@
     "rs-panel": "^0.1.3",
     "rs-pop": "^0.1.1",
     "rs-select": "0.0.5",
-    "rs-sweetalert": "^0.1.2",
+    "rs-sweetalert": "^0.1.3",
     "rs-tab": "^0.1.2",
     "rs-timeline": "0.0.3",
     "rs-tree": "^0.1.9",
@@ -50,7 +50,8 @@
   },
   "files": [
     "index.js",
-    "src/"
+    "src/",
+    "dist/"
   ],
   "devDependencies": {
     "babel": "^6.3.26",
@@ -83,6 +84,7 @@
     "react-dom": "^0.14.7",
     "require-dir": "^0.3.0",
     "rs-csslayout": "^0.1.2",
+    "rs-server": "^0.1.2",
     "salt-routeify": "0.0.2",
     "serialize-javascript": "^1.1.2",
     "style-loader": "^0.13.0",
